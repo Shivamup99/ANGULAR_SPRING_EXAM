@@ -1,0 +1,27 @@
+<div class='login'>
+
+  <div class="login-data">
+  <img src='https://images.pexels.com/photos/301920/pexels-photo-301920.jpeg?cs=srgb&dl=pexels-pixabay-301920.jpg&fm=jpg' alt='dd'/>
+<form class="login-box" (submit)="formSubmit()">
+  <h1>Login Form</h1>
+  <div class="login-content">
+  <div class="input-email">
+  <input type="text" placeholder='username' name='username' [(ngModel)]="user.username"  required />
+  </div>
+
+  <div class="input-email">
+  <input type="password" placeholder='password' name='password'  [(ngModel)]="user.password"  required />
+  </div>
+  <!-- <mat-hint class="error">email is required</mat-hint> -->
+
+  </div>
+  <div class="auth-btn">
+  <button type="submit">Let me in</button>
+
+  <a routerLink='/register' class='reg'>
+   don't have an account ? Sign up
+    </a>
+  </div>
+</form>
+  </div>
+</div>
